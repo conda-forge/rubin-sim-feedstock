@@ -35,14 +35,17 @@ requirements:
     - sqlite
     - sqlalchemy
     - astropy
-    - pytables
     - h5py
     - openorb
     - openorb-data-de405
     - astroplan
-    - colorcet
     - george
     - scikit-learn
+    - six
+    - numexpr
+    - ipyparallel
+    - numba
+    - ephem
 
 test:
   imports:
