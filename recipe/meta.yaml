@@ -14,6 +14,9 @@ build:
   skip: true  # [win]
   # this build cannot be noarch because of the scripts keyword in the setup.py
   script: {{ PYTHON }} -m pip install . -vv
+  # this can be removed if upstream makes github releases and not just tags
+  script_env:
+    - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
 
 requirements:
   host:
