@@ -14,7 +14,7 @@ Current build status
 
 
 <table>
-
+    
   <tr>
     <td>Azure</td>
     <td>
@@ -94,17 +94,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-<<<<<<< HEAD
 Once the `conda-forge` channel has been enabled, `rubin-sim, rubin_sim` can be installed with:
 
 ```
 conda install rubin-sim rubin_sim
-=======
-Once the `conda-forge` channel has been enabled, `rubin-sim` can be installed with:
-
-```
-conda install rubin-sim
->>>>>>> 6d54ed2294b4fb274c55806574d876d2aec65c36
 ```
 
 It is possible to list all of the versions of `rubin-sim` available on your platform with:
@@ -181,3 +174,4 @@ Feedstock Maintainers
 * [@beckermr](https://github.com/beckermr/)
 * [@rhiannonlynne](https://github.com/rhiannonlynne/)
 * [@tribeiro](https://github.com/tribeiro/)
+
