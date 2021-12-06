@@ -21,7 +21,10 @@ outputs:
   - name: rubin_sim
     version: {{ version }}
     requirements:
+      host:
+        - python
       run:
+        - python
         - rubin-sim =={{ version }}
 
   - name: rubin-sim
