@@ -18,6 +18,10 @@ build:
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
 
+test:
+  imports:
+    - rubin_sim
+
 outputs:
   - name: {{ name|lower }}
     version: {{ version }}
@@ -51,10 +55,6 @@ outputs:
         - numba
         - ephem
         - pytables
-
-test:
-  imports:
-    - rubin_sim
 
 about:
   home: https://github.com/lsst/rubin_sim
