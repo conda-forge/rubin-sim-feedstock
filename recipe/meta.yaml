@@ -18,6 +18,12 @@ test:
     - rubin_sim
 
 outputs:
+  - name: rubin_sim
+    version: {{ version }}
+    requirements:
+      run:
+        - rubin-sim =={{ version }}
+
   - name: rubin-sim
     version: {{ version }}
     script: run_sim_build.sh
