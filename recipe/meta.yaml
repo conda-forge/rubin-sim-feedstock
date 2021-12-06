@@ -13,10 +13,6 @@ build:
   number: 1
   skip: true  # [win]
 
-test:
-  imports:
-    - rubin_sim
-
 outputs:
   - name: rubin_sim
     version: {{ version }}
@@ -26,6 +22,9 @@ outputs:
       run:
         - python
         - rubin-sim =={{ version }}
+    test:
+      imports:
+        - rubin_sim
 
   - name: rubin-sim
     version: {{ version }}
@@ -59,6 +58,9 @@ outputs:
         - numba
         - ephem
         - pytables
+    test:
+      imports:
+        - rubin_sim
 
 about:
   home: https://github.com/lsst/rubin_sim
