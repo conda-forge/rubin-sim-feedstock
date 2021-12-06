@@ -81,7 +81,8 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-rubin--sim--all-green.svg)](https://anaconda.org/conda-forge/rubin-sim-all) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubin-sim-all.svg)](https://anaconda.org/conda-forge/rubin-sim-all) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubin-sim-all.svg)](https://anaconda.org/conda-forge/rubin-sim-all) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubin-sim-all.svg)](https://anaconda.org/conda-forge/rubin-sim-all) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rubin--sim-green.svg)](https://anaconda.org/conda-forge/rubin-sim) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubin-sim.svg)](https://anaconda.org/conda-forge/rubin-sim) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubin-sim.svg)](https://anaconda.org/conda-forge/rubin-sim) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubin-sim.svg)](https://anaconda.org/conda-forge/rubin-sim) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rubin_sim-green.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) |
 
 Installing rubin-sim-all
 ========================
@@ -93,16 +94,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `rubin-sim-all` can be installed with:
+Once the `conda-forge` channel has been enabled, `rubin-sim, rubin_sim` can be installed with:
 
 ```
-conda install rubin-sim-all
+conda install rubin-sim rubin_sim
 ```
 
-It is possible to list all of the versions of `rubin-sim-all` available on your platform with:
+It is possible to list all of the versions of `rubin-sim` available on your platform with:
 
 ```
-conda search rubin-sim-all --channel conda-forge
+conda search rubin-sim --channel conda-forge
 ```
 
 
