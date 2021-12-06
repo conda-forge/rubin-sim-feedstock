@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-export SETUPTOOLS_SCM_PRETEND_VERSION=${VERSION}
-${PYTHON} -m pip install . -vv
+echo "version: ${PKG_VERSION}"
+SETUPTOOLS_SCM_PRETEND_VERSION=${PKG_VERSION} ${PYTHON} -m pip install . -vv
