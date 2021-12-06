@@ -1,4 +1,4 @@
-{% set name = "rubin-sim" %}
+{% set name = "rubin-sim-all" %}
 {% set version = "0.6.1" %}
 
 package:
@@ -10,46 +10,57 @@ source:
   sha256: 257e99f21a85f17118018ba45dee679528a5a84f8346ea06f5cf93f638e344fc
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
-  # this build cannot be noarch because of the scripts keyword in the setup.py
-  script: {{ PYTHON }} -m pip install . -vv
-  # this can be removed if upstream makes github releases and not just tags
-  script_env:
-    - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
 
-requirements:
-  host:
-    - python
-    - pip
-    - setuptools_scm
-    - setuptools_scm_git_archive
-  run:
-    - python
-    - numpy
-    - matplotlib-base
-    - healpy
-    - pandas
-    - palpy
-    - scipy
-    - sqlite
-    - sqlalchemy
-    - astropy
-    - h5py
-    - openorb
-    - openorb-data-de405
-    - astroplan
-    - george
-    - scikit-learn
-    - six
-    - numexpr
-    - ipyparallel
-    - numba
-    - ephem
+outputs:
+  - name: rubin_sim
+    version: {{ version }}
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - rubin-sim =={{ version }}
+    test:
+      imports:
+        - rubin_sim
 
-test:
-  imports:
-    - rubin_sim
+  - name: rubin-sim
+    version: {{ version }}
+    script: run_sim_build.sh
+    requirements:
+      host:
+        - python
+        - pip
+        - setuptools_scm
+        - setuptools_scm_git_archive
+      run:
+        - python
+        - numpy
+        - matplotlib-base
+        - healpy
+        - pandas
+        - palpy
+        - scipy
+        - sqlite
+        - sqlalchemy
+        - astropy
+        - h5py
+        - openorb
+        - openorb-data-de405
+        - astroplan
+        - george
+        - scikit-learn
+        - six
+        - numexpr
+        - ipyparallel
+        - numba
+        - ephem
+        - pytables
+    test:
+      imports:
+        - rubin_sim
 
 about:
   home: https://github.com/lsst/rubin_sim
