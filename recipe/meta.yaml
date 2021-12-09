@@ -60,6 +60,7 @@ outputs:
         - pytables
         - colorcet
         - cycler
+        - requests
     test:
       imports:
         - rubin_sim
