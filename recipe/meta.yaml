@@ -58,6 +58,8 @@ outputs:
         - numba
         - ephem
         - pytables
+        - colorcet
+        - cycler
     test:
       imports:
         - rubin_sim
