@@ -10,7 +10,7 @@ source:
   sha256: fa1fe711a0510c8bab2ecf34a6ce2292e3505c3f0d8a12bd014b6c0287697619
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 outputs:
@@ -21,7 +21,7 @@ outputs:
         - python
       run:
         - python
-        - rubin-sim =={{ version }}
+        - {{ pin_subpackage('rubin-sim', exact=True) }}
     test:
       imports:
         - rubin_sim
