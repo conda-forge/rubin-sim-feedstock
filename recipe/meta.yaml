@@ -37,7 +37,7 @@ outputs:
         - setuptools_scm_git_archive
       run:
         - python
-        - numpy
+        - {{ pin_compatible('numpy') }}
         - matplotlib-base
         - healpy
         - pandas
