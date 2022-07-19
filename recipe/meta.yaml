@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a87d6c142af5a83cfb61afc485002d51ab8152a71d3898fba3ed4f8ac0ca6fea
+  sha256: d3902f6c1bdd1b66986583ccc7cd4e5dd3f912e7650af2ee7448b186405d1cf6
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 outputs:
@@ -37,7 +37,7 @@ outputs:
         - setuptools_scm_git_archive
       run:
         - python
-        - numpy
+        - {{ pin_compatible('numpy') }}
         - matplotlib-base
         - healpy
         - pandas
@@ -56,7 +56,6 @@ outputs:
         - numexpr
         - ipyparallel
         - numba
-        - ephem
         - pytables
         - colorcet
         - cycler
