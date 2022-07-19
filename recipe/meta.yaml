@@ -56,7 +56,6 @@ outputs:
         - numexpr
         - ipyparallel
         - numba
-        - ephem
         - pytables
         - colorcet
         - cycler
