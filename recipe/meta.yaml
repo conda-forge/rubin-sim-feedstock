@@ -10,7 +10,7 @@ source:
   sha256: d80de23ce5e5b5078b822884b072b1bca252bdd54b60348ce67108ce21c1e6f7
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 outputs:
@@ -54,12 +54,13 @@ outputs:
         - scikit-learn
         - six
         - numexpr
-        - ipyparallel
         - numba
         - pytables
         - colorcet
         - cycler
         - requests
+        - shapely
+        - skyfield
     test:
       imports:
         - rubin_sim
