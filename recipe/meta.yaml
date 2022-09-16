@@ -1,5 +1,5 @@
 {% set name = "rubin-sim-all" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/{{ version }}.tar.gz
-  sha256: b3cd427e4d1479917809077a2c219debb33bda4eb94400af75c865c55cc97a26
+  sha256: ca612d7b8ffe30bd7993c75edb0f7cb74ce0ed5a8a8581e3506f848a592ef345
 
 build:
   number: 0
