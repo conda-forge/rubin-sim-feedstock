@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ca612d7b8ffe30bd7993c75edb0f7cb74ce0ed5a8a8581e3506f848a592ef345
+  sha256: a1a45c4c358ffcdcdab734f3605dc5fd06d9065fb99e7a5ce24799e54c903413
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 outputs:
@@ -61,6 +61,7 @@ outputs:
         - requests
         - shapely
         - skyfield
+        - tqdm
     test:
       imports:
         - rubin_sim
