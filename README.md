@@ -1,11 +1,11 @@
-About rubin-sim-all
-===================
+About rubin-sim-all-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubin-sim-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lsst/rubin_sim
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubin-sim-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scheduler, survey strategy analysis, and other simulation tools for Rubin Observatory.
 
