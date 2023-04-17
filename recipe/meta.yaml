@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 344650a64221cfe18123598dd5e92ae46f3604f9e863b784e934cdd7b62a1ba9
+  sha256: 7af7fcb1e54e7d22d2df25719e3b538aea005eff1572ca878618bb931ac30d71
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 outputs:
@@ -30,6 +30,9 @@ outputs:
     version: {{ version }}
     script: run_sim_build.sh
     requirements:
+      build:
+        - python                                 # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
       host:
         - python
         - pip
