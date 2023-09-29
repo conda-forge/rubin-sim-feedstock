@@ -36,7 +36,7 @@ outputs:
       host:
         - python
         - pip
-        - setuptools_scm
+        - setuptools_scm <8.0
         - setuptools_scm_git_archive
       run:
         - python
@@ -46,7 +46,6 @@ outputs:
         - pandas
         - palpy
         - scipy
-        - sqlite
         - sqlalchemy
         - astropy
         - h5py
@@ -55,7 +54,6 @@ outputs:
         - astroplan
         - george
         - scikit-learn
-        - six
         - numexpr
         - numba
         - pytables
