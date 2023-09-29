@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e61e3b88d9bb35b91494f7f8335fac692f14d405b42e8ab6c29abb5545edd335
+  sha256: 63d661579e22f02e8216470228be121a6425893bb21d3d3d22b978dbc439f542
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 outputs:
