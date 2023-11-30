@@ -271,4 +271,5 @@ Feedstock Maintainers
 * [@beckermr](https://github.com/beckermr/)
 * [@rhiannonlynne](https://github.com/rhiannonlynne/)
 * [@tribeiro](https://github.com/tribeiro/)
+* [@yoachim](https://github.com/yoachim/)
 
