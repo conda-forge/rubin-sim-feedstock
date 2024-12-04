@@ -10,7 +10,7 @@ source:
   sha256: 834db8396a0dd0c45cf83ccdc3a2052759b6a1e5a95c0990971350821c6fcdb0
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 outputs:
@@ -48,7 +48,7 @@ outputs:
         - numexpr
         - scipy
         - sqlalchemy
-        - astropy
+        - astropy-base
         - h5py
         - openorb
         - openorb-data-de405
