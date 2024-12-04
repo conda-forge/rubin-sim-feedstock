@@ -10,12 +10,13 @@ source:
   sha256: fe179ef1e781abd7d30e69b19fc3b3818c9f329b07548862d97189e0c5dd09e9
 
 build:
-  noarch: python
   number: 1
 
 outputs:
   - name: rubin_sim
     version: {{ version }}
+    build:
+      noarch: python
     requirements:
       host:
         - python {{ python_min }}
@@ -31,6 +32,8 @@ outputs:
   - name: rubin-sim
     version: {{ version }}
     script: run_sim_build.sh
+    build:
+      noarch: python
     requirements:
       host:
         - python {{ python_min }}
