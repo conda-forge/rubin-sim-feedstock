@@ -36,6 +36,7 @@ outputs:
       host:
         - python
         - pip
+        - setuptools
         - setuptools_scm <8.0
         - setuptools_scm_git_archive
       run:
