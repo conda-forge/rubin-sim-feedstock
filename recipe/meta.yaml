@@ -7,40 +7,43 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 834db8396a0dd0c45cf83ccdc3a2052759b6a1e5a95c0990971350821c6fcdb0
+  sha256: fe179ef1e781abd7d30e69b19fc3b3818c9f329b07548862d97189e0c5dd09e9
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
 
 outputs:
   - name: rubin_sim
     version: {{ version }}
+    build:
+      noarch: python
     requirements:
       host:
-        - python
+        - python {{ python_min }}
       run:
-        - python
+        - python >={{ python_min }}
         - {{ pin_subpackage('rubin-sim', exact=True) }}
     test:
       imports:
         - rubin_sim
+      requires:
+        - python {{ python_min }}
 
   - name: rubin-sim
     version: {{ version }}
     script: run_sim_build.sh
+    build:
+      noarch: python
     requirements:
-      build:
-        - python                                 # [build_platform != target_platform]
-        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
       host:
-        - python
+        - python {{ python_min }}
         - pip
+        - setuptools
         - setuptools_scm <8.0
         - setuptools_scm_git_archive
       run:
-        - python
-        - {{ pin_compatible('numpy') }}
+        - python >={{ python_min }}
+        - numpy
         - matplotlib-base
         - healpy
         - pandas
@@ -48,7 +51,7 @@ outputs:
         - numexpr
         - scipy
         - sqlalchemy
-        - astropy
+        - astropy-base
         - h5py
         - openorb
         - openorb-data-de405
@@ -68,6 +71,8 @@ outputs:
         - rubin_sim
       commands:
         - scheduler_download_data --help
+      requires:
+        - python {{ python_min }}
 
 about:
   home: https://github.com/lsst/rubin_sim
