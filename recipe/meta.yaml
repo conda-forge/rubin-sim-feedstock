@@ -1,5 +1,5 @@
 {% set name = "rubin-sim-all" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fe179ef1e781abd7d30e69b19fc3b3818c9f329b07548862d97189e0c5dd09e9
+  sha256: 78ce5a33a09d92e5fd81f0153819094f8332556ed571e7ea27e95f55ea65ed43
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: rubin_sim
@@ -53,8 +53,6 @@ outputs:
         - sqlalchemy
         - astropy-base
         - h5py
-        - openorb
-        - openorb-data-de405
         - astroplan
         - george
         - pytables
