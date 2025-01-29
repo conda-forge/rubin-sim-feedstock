@@ -43,7 +43,7 @@ outputs:
         - setuptools_scm_git_archive
       run:
         - python >={{ python_min }}
-        - numpy >= 2
+        - numpy >=2
         - matplotlib-base
         - healpy
         - pandas
