@@ -10,7 +10,7 @@ source:
   sha256: 78ce5a33a09d92e5fd81f0153819094f8332556ed571e7ea27e95f55ea65ed43
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: rubin_sim
@@ -43,7 +43,7 @@ outputs:
         - setuptools_scm_git_archive
       run:
         - python >={{ python_min }}
-        - numpy
+        - numpy >= 2
         - matplotlib-base
         - healpy
         - pandas
