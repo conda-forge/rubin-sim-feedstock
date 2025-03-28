@@ -1,5 +1,6 @@
 {% set name = "rubin-sim-all" %}
 {% set version = "2.2.2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +40,7 @@ outputs:
         - python {{ python_min }}
         - pip
         - setuptools
-        - setuptools_scm <8.0
+        - setuptools_scm >=8.0
         - setuptools_scm_git_archive
       run:
         - python >={{ python_min }}
