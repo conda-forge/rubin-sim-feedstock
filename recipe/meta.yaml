@@ -11,7 +11,7 @@ source:
   sha256: 30f3f1639f76e52801d3b7195855c8be9a676068a193e76ae2866506b611a35e
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: rubin_sim
@@ -44,34 +44,32 @@ outputs:
         - setuptools_scm_git_archive
       run:
         - python >={{ python_min }}
-        - numpy
-        - matplotlib-base
+        - astropy-base
+        - astroplan
+        - colorcet
+        - conda
+        - cycler
+        - gitpython
         - healpy
+        - h5py
+        - matplotlib-base
+        - numpy
+        - numexpr
         - pandas
         - pyarrow
-        - numexpr
-        - scipy
-        - sqlalchemy
-        - astropy-base
-        - h5py
-        - astroplan
-        - george
         - pytables
-        - colorcet
-        - cycler
-        - scikit-learn
+        - rubin-scheduler >=3.0
+        - scipy
         - shapely
-        - skyfield
+        - skyfield >=1.52
         - skyproj
+        - sqlalchemy
         - tqdm
-        - gitpython
-        - conda
-        - rubin-scheduler
     test:
       imports:
         - rubin_sim
       commands:
-        - scheduler_download_data --help
+        - rs_download_data --help
       requires:
         - python {{ python_min }}
 
