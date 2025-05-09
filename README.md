@@ -28,7 +28,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-rubin--sim-green.svg)](https://anaconda.org/conda-forge/rubin-sim) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubin-sim.svg)](https://anaconda.org/conda-forge/rubin-sim) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubin-sim.svg)](https://anaconda.org/conda-forge/rubin-sim) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubin-sim.svg)](https://anaconda.org/conda-forge/rubin-sim) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-rubin_sim-green.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rubin__sim-green.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubin_sim.svg)](https://anaconda.org/conda-forge/rubin_sim) |
 
 Installing rubin-sim-all
 ========================
