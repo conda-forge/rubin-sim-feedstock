@@ -11,7 +11,7 @@ source:
   sha256: 8e0623180c5d2e24d04d020d04f165a86d47920d77b91faf55b70effdd5307a2
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: rubin_sim
@@ -47,7 +47,6 @@ outputs:
         - astropy-base
         - astroplan
         - colorcet
-        - conda
         - cycler
         - gitpython
         - healpy
@@ -58,7 +57,7 @@ outputs:
         - pandas
         - pyarrow
         - pytables
-        - rubin-scheduler >=3.0
+        - rubin-scheduler >=3.8
         - scipy
         - shapely
         - skyfield >=1.52
