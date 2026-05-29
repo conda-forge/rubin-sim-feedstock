@@ -55,7 +55,7 @@ outputs:
         - numpy
         - numexpr
         - pandas
-      - psycopg2
+        - psycopg2
         - pyarrow
         - pytables
         - rubin-scheduler >=3.18
