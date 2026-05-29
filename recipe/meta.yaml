@@ -8,8 +8,7 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 55f5fb658ef01fc3b222e4620bc7606249f525a821be2bbb97eac26cd84600d2
-
+  sha256: 98098d8d1cad1f8c1f017b799d9b83e411e8241213152d1a29ab3fc7ba11ddb4
 build:
   number: 0
 
