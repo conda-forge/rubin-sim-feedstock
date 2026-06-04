@@ -1,5 +1,5 @@
 {% set name = "rubin-sim-all" %}
-{% set version = "2.6.1" %}
+{% set version = "2.6.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,8 +8,7 @@ package:
 
 source:
   url: https://github.com/lsst/rubin_sim/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f7f8be2be2be99666686799071a77ea00e6c61f2cab0e41318673f6117870037
-
+  sha256: 98098d8d1cad1f8c1f017b799d9b83e411e8241213152d1a29ab3fc7ba11ddb4
 build:
   number: 0
 
@@ -55,6 +54,7 @@ outputs:
         - numpy
         - numexpr
         - pandas
+        - psycopg2
         - pyarrow
         - pytables
         - rubin-scheduler >=3.18
